@@ -6,6 +6,18 @@
 // - link: endereço do post (sem a parte "?utm_source=..." do final)
 window.LINKEDIN_POSTS = [
   {
+    data: "2026-10-30",
+    titulo: "Você não consegue melhorar o que não consegue ver",
+    resumo: "Como o time adotou o Kanban no Microsoft Planner: demandas que chegavam por vários canais viraram um quadro visível, com base para medir prazos e gargalos.",
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7522006256178348032/"
+  },
+  {
+    data: "2026-09-14",
+    titulo: "Meu primeiro projeto publicado no GitHub: Pipeline Atlas",
+    resumo: "Pipeline em Python que extrai vendas de Cursos Livres via API, consolida o histórico, remove duplicidades e faz carga incremental no Databricks, com logs.",
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7505218906874216448/"
+  },
+  {
     data: "2026-01-17",
     titulo: "Automatizei a baixa de pagamentos manuais no SAP (F110)",
     resumo: "VBA, Power Query e SAP Script para extrair, tratar, validar e executar as baixas. Uma tarefa de 10 a 15 minutos para 30 empresas passou a levar 2 minutos.",

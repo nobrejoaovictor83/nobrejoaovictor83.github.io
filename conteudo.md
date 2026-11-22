@@ -21,7 +21,7 @@ Itens marcados com **[CONFIRMAR]** precisam da sua resposta.
 
 **Ferramentas:** Excel · VBA · Power BI · SQL · Power Query · Power Automate · Alteryx · SAP · Databricks · Python · Figma
 
-**Certificação:** CPA e C-PRO R (ANBIMA) **[CONFIRMAR: o currículo diz "agosto/2026" e o site antigo diz "CPA-20 em julho de 2025"]**
+**Certificação:** CPA-20 (ANBIMA) em julho/2025, migrada para C-PRO R em agosto/2026.
 
 **Trajetória (resumida):**
 - 2026 – hoje: Analista de Planejamento e Performance Operacional Jr (YDUQS)

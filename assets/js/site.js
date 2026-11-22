@@ -66,6 +66,47 @@
     });
   }
 
+  // Galeria: clicar na imagem de um card abre a imagem grande (com setas se houver várias)
+  var galeria = document.getElementById("galeria");
+  if (galeria && galeria.showModal) {
+    var gImg = document.getElementById("galeriaImg");
+    var gTitulo = document.getElementById("galeriaTitulo");
+    var gCont = document.getElementById("galeriaCont");
+    var gNav = galeria.querySelector(".galeria-nav");
+    var gFotos = [], gPos = 0, gAlt = "";
+
+    function mostrarFoto() {
+      gImg.src = gFotos[gPos];
+      gImg.alt = gAlt + " (tela " + (gPos + 1) + " de " + gFotos.length + ")";
+      gCont.textContent = (gPos + 1) + " / " + gFotos.length;
+    }
+    function mover(passo) {
+      gPos = (gPos + passo + gFotos.length) % gFotos.length;
+      mostrarFoto();
+    }
+
+    document.querySelectorAll(".foto").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        gFotos = btn.getAttribute("data-fotos").split(",");
+        gPos = 0;
+        gAlt = btn.querySelector("img").alt;
+        gTitulo.textContent = btn.getAttribute("data-titulo") || "";
+        gNav.hidden = gFotos.length < 2;
+        mostrarFoto();
+        galeria.showModal();
+      });
+    });
+    document.getElementById("galeriaAnt").addEventListener("click", function () { mover(-1); });
+    document.getElementById("galeriaProx").addEventListener("click", function () { mover(1); });
+    document.getElementById("galeriaFechar").addEventListener("click", function () { galeria.close(); });
+    galeria.addEventListener("click", function (ev) { if (ev.target === galeria) galeria.close(); }); // clique fora fecha
+    galeria.addEventListener("keydown", function (ev) {
+      if (gFotos.length < 2) return;
+      if (ev.key === "ArrowLeft") mover(-1);
+      if (ev.key === "ArrowRight") mover(1);
+    });
+  }
+
   // Publicações do LinkedIn (vêm de assets/data/linkedin.js)
   var listaPosts = document.getElementById("linkedinPosts");
   var posts = (window.LINKEDIN_POSTS || []).slice().sort(function (a, b) {
