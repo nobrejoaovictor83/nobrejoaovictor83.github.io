@@ -23,6 +23,8 @@ Depois abra http://localhost:8000 no navegador. Para parar o servidor: `Ctrl + C
 
 ## Manutenção
 
+Passo a passo completo, com exemplos: [MANUTENCAO.md](MANUTENCAO.md).
+
 | O que mudar | Arquivo |
 |---|---|
 | Novo post do LinkedIn | `assets/data/linkedin.js` (copiar um bloco e trocar os textos) |
