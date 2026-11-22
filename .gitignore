@@ -1,0 +1,15 @@
+# Projeto de outro desenvolvedor, usado só como referência (sem licença: não pode ir para o repositório)
+projeto_referencia/
+
+# Configurações locais do Claude Code (podem ter caminhos e permissões da sua máquina)
+.claude/settings.local.json
+
+# Arquivos de sistema e de editor
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+
+# Segredos: nunca versionar
+.env
+*.env
