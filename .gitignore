@@ -13,3 +13,6 @@ desktop.ini
 # Segredos: nunca versionar
 .env
 *.env
+
+# Rascunho de conteúdo (só local)
+conteudo.md
